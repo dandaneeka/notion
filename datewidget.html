@@ -19,7 +19,7 @@
     font-size:large;
 }
 body{
-    background-color: #1B491C;
+    background-color: #113912;
 }
     </style>
 </head>
@@ -29,15 +29,15 @@ body{
 
 <script>
     var weekday = new Array(7);
-    weekday[0] = "Sunday";
-    weekday[1] = "Monday";
-    weekday[2] = "Tuesday";
-    weekday[3] = "Wednesday";
-    weekday[4] = "Thursday";
-    weekday[5] = "Friday";
-    weekday[6] = "Saturday";
+    weekday[0] = "SUNDAY";
+    weekday[1] = "MONDAY";
+    weekday[2] = "TUESDAY";
+    weekday[3] = "WEDNESDAY";
+    weekday[4] = "THURSDAY";
+    weekday[5] = "FRIDAY";
+    weekday[6] = "SATURDAY";
 
-  const monthNames = ["January", "February", "March", "April", "May", "June",
+  const monthNames = ["JANUARY", "February", "March", "April", "May", "June",
       "July", "August", "September", "October", "November", "December"
     ];
 
@@ -50,11 +50,11 @@ body{
     var greet;
 
     if (hrs < 12)
-        greet = 'g o o d   m o r n i n g  ';
+        greet = '<i>good morning</i>';
     else if (hrs >= 12 && hrs <= 17)
-        greet = 'g o o d   a f t e r n o o n ';
+        greet = '<i>good afternoon</i>';
     else if (hrs >= 17 && hrs <= 24)
-        greet = 'g o o d   e v e n i n g  ';
+        greet = '<i>good evening</i>';
 
     document.getElementById('lbl').innerHTML = `
         <div class="container">
