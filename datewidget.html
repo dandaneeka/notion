@@ -4,6 +4,7 @@
     <style>
 #lbl {
     font-family: serif;
+    fony-style: italic;
     font-size: xx-large;
     color: #FFFFFF;
     padding: 5px;
@@ -18,7 +19,7 @@
     font-size:large;
 }
 body{
-    background-color: #44774D;
+    background-color: #1B491C;
 }
     </style>
 </head>
@@ -49,11 +50,11 @@ body{
     var greet;
 
     if (hrs < 12)
-        greet = 'good morning.  ';
+        greet = 'g o o d   m o r n i n g  ';
     else if (hrs >= 12 && hrs <= 17)
-        greet = 'good afternoon. ';
+        greet = 'g o o d   a f t e r n o o n ';
     else if (hrs >= 17 && hrs <= 24)
-        greet = 'good evening.  ';
+        greet = 'g o o d   e v e n i n g  ';
 
     document.getElementById('lbl').innerHTML = `
         <div class="container">
