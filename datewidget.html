@@ -36,7 +36,7 @@ body{
     weekday[5] = "FRIDAY";
     weekday[6] = "SATURDAY";
 
-  const monthNames = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE",
+  const monthNames = ["J A N U A R Y", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE",
       "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"
     ];
 
@@ -44,7 +44,7 @@ body{
     var today = new Date();
     var hrs = today.getHours();
     var dayOfWeek = weekday[today.getDay()];
-    var date = `${dayOfWeek} // ${monthNames[today.getMonth()]} ${today.getDate()} // ${today.getFullYear()}`;
+    var date = `${dayOfWeek} <p> ${monthNames[today.getMonth()]} ${today.getDate()} // ${today.getFullYear()}`;
 
     var greet;
 
