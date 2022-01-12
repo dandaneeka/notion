@@ -4,9 +4,8 @@
     <style>
 #lbl {
     font-family: serif;
-    fony-style: italic;
     font-size: xx-large;
-    color: #FFFFFF;
+    color: #ececec;
     padding: 5px;
     border: 1px solid #ececec;
     text-align: center;
@@ -16,7 +15,7 @@
 
 }
 #date{
-    font-size:large;
+    font-size:x-large;
 }
 body{
     background-color: #113912;
@@ -29,10 +28,10 @@ body{
 
 <script>
     var weekday = new Array(7);
-    weekday[0] = "SUNDAY";
+    weekday[0] = "S U N D A Y";
     weekday[1] = "MONDAY";
     weekday[2] = "TUESDAY";
-    weekday[3] = "WEDNESDAY";
+    weekday[3] = "W E D N E S D A Y";
     weekday[4] = "THURSDAY";
     weekday[5] = "FRIDAY";
     weekday[6] = "SATURDAY";
@@ -45,7 +44,7 @@ body{
     var today = new Date();
     var hrs = today.getHours();
     var dayOfWeek = weekday[today.getDay()];
-    var date = `${dayOfWeek} ${monthNames[today.getMonth()]} ${today.getDate()} ${today.getFullYear()}`;
+    var date = `${dayOfWeek} // ${monthNames[today.getMonth()]} ${today.getDate()} // ${today.getFullYear()}`;
 
     var greet;
 
